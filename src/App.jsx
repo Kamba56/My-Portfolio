@@ -1,7 +1,11 @@
+import CompleteApp from './components/Complete';
 import Header from './components/Header';
 
 const App = () => (
-  <Header />
+  <>
+    <Header />
+    <CompleteApp />
+  </>
 );
 
-export default App
+export default App;

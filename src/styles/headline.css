@@ -1,0 +1,42 @@
+.wave {
+  width: 30px;
+}
+
+.name {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+.green-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #2CB67D;
+}
+
+.about {
+  padding-bottom: 60px;
+}
+
+#contain {
+  justify-content: space-evenly;
+  height: fit-content;
+  min-height: 70vh;
+}
+
+@media only screen and (min-width: 768px) {
+  .green-text {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .name {
+    font-size: 80px;
+    line-height: 94px;
+  }
+
+  .about {
+    padding-bottom: 0;
+  }
+}
