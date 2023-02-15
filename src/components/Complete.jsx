@@ -1,7 +1,11 @@
 import Headline from "./Headline";
+import Projects from "./Projects";
 
 const CompleteApp = () => (
-  <Headline />
+  <main>
+    <Headline />
+    <Projects />
+  </main>
 );
 
 export default CompleteApp;
