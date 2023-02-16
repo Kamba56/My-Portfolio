@@ -21,7 +21,7 @@ const SKills = () => {
     <section id='skills' className='container'>
       <h2 className='title center-text'>My Skills</h2>
 
-      <div className='skill-grid'>
+      <div className='skill-grid content'>
         {skills.map((skill) => (
           <div className='skill-item'>
             <div className='flex'>

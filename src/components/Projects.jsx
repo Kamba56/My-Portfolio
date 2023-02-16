@@ -15,7 +15,7 @@ const Projects = () => {
     <section id='projects' className='container'>
       <h2 className='title center-text'>Projects</h2>
 
-      <div className='project-grid container'>
+      <div className='project-grid container content'>
         {projects.map((project) => (
           <div className='grid-item flex column' key={project.id}>
             <div className='project-img'>

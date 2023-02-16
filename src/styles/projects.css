@@ -3,7 +3,6 @@
 }
 
 .project-grid {
-  margin: 40px auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -38,16 +37,6 @@
 
 .project-btns {
   width: 100%;
-}
-
-.btn {
-  padding: 8px 15px;
-  background-color: #2c66c3;
-  font-size: 14px;
-}
-
-.btn2 {
-  background-color: #2CB67D;
 }
 
 @media only screen and (min-width: 768px) {

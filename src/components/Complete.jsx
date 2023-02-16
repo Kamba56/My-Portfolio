@@ -1,3 +1,4 @@
+import Contact from "./Contact";
 import Headline from "./Headline";
 import Projects from "./Projects";
 import SKills from "./Skills";
@@ -7,6 +8,7 @@ const CompleteApp = () => (
     <Headline />
     <Projects />
     <SKills />
+    <Contact />
   </main>
 );
 
