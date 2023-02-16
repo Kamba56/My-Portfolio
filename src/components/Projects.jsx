@@ -17,7 +17,7 @@ const Projects = () => {
 
       <div className='project-grid container'>
         {projects.map((project) => (
-          <div className='grid-item flex column'>
+          <div className='grid-item flex column' key={project.id}>
             <div className='project-img'>
               <img src={project.image} />
             </div>
