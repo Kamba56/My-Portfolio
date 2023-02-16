@@ -4,15 +4,15 @@ import '../styles/header.css';
 const Header = () => (
   <header className="flex-space">
     <div className="logo">
-      <a>Kamba</a>
+      <a className='mono'>Kamba</a>
     </div>
 
     <nav className='desktop-nav'>
       <ul className="flex">
-        <li><a href="#">About me</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Contact me</a></li>
+        <li><a href="#" className='mono'>About me</a></li>
+        <li><a href="#" className='mono'>Projects</a></li>
+        <li><a href="#" className='mono'>Skills</a></li>
+        <li><a href="#" className='mono'>Contact me</a></li>
       </ul>
     </nav>
 

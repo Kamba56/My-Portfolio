@@ -1,0 +1,13 @@
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  justify-content: center;
+  row-gap: 10px;
+  column-gap: 10px;
+  margin: 40px auto;
+}
+
+.skill-item {
+  border: 0.5px solid rgba(255, 255, 255, 0.5);
+  padding: 3px;
+}

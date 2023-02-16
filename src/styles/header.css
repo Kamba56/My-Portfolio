@@ -1,8 +1,6 @@
 header {
   background: linear-gradient(#000, #111827 62%);
   padding: 24px;
-  font-weight: 300;
-  font-family: monospace;
 }
 
 nav ul li a {

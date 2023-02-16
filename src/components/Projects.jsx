@@ -24,8 +24,8 @@ const Projects = () => {
             <div className='project-details flex column'>
               <h4 className='center-text'>{project.title}</h4>
               <div className='project-btns flex-space'>
-                <a href={project.source} className="btn">Source code</a>
-                <a href={project.live} className="btn btn2">Live demo</a>
+                <a href={project.source} className="btn mono">Source code</a>
+                <a href={project.live} className="btn btn2 mono">Live demo</a>
               </div>
             </div>
           </div>
