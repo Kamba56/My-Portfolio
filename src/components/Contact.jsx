@@ -14,7 +14,7 @@ const Contact = () => {
         <Socials />
       </div>
 
-      <form action="#" className='container'>
+      <form action="https://formsubmit.co/7503d3f238af50b32140ca84c1a71d4b" method='POST' className='container'>
         <p className='center-text mono'>Or leave a message and I will get back to you</p>
         <div className='container column'>
           <input required type="email" name="email" id="mail" placeholder='Please enter your email' className='input mono' />
