@@ -1,22 +1,30 @@
 import '../styles/header.css';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import AnchorLink from 'react-anchor-link-smooth-scroll-v2';
 
 const Header = (props) => {
-  const { active, handleNav } = props;
+  const { active, setActive } = props;
+  const handleAnchorTags = () => {
+    setActive(false);
+  }
+
+  const handleNav = () => {
+    setActive((active) => !active);
+  };
 
   return (
     <header className="flex-space">
       <div className="logo">
-        <a className='mono'>Kamba</a>
+        <Link to='/' className='mono'>Kamba</Link>
       </div>
 
       <nav className='desktop-nav'>
         <ul className="flex">
-          <li><AnchorLink href="#about" className='mono'>About me</AnchorLink></li>
-          <li><AnchorLink href="#projects" className='mono'>Projects</AnchorLink></li>
-          <li><AnchorLink href="#skills" className='mono'>Skills</AnchorLink></li>
-          <li><AnchorLink href="#contact" className='mono'>Contact me</AnchorLink></li>
+          <li><AnchorLink href="#about" className='mono' onClick={handleAnchorTags}>About me</AnchorLink></li>
+          <li><AnchorLink href="#projects" className='mono' onClick={handleAnchorTags}>Projects</AnchorLink></li>
+          <li><AnchorLink href="#skills" className='mono' onClick={handleAnchorTags}>Skills</AnchorLink></li>
+          <li><AnchorLink href="#contact" className='mono' onClick={handleAnchorTags}>Contact me</AnchorLink></li>
         </ul>
       </nav>
       {!active && <button className='hamburger' onClick={handleNav}>
@@ -27,10 +35,10 @@ const Header = (props) => {
 
       {active && <nav id='mobile-nav' className='flex-space'>
         <ul className="flex column">
-          <li><AnchorLink href="#about" className='mono'>About me</AnchorLink></li>
-          <li><AnchorLink href="#projects" className='mono'>Projects</AnchorLink></li>
-          <li><AnchorLink href="#skills" className='mono'>Skills</AnchorLink></li>
-          <li><AnchorLink href="#contact" className='mono'>Contact me</AnchorLink></li>
+          <li><a href="#about" className='mono' onClick={handleAnchorTags}>About me</a></li>
+          <li><a href="#projects" className='mono' onClick={handleAnchorTags}>Projects</a></li>
+          <li><a href="#skills" className='mono' onClick={handleAnchorTags}>Skills</a></li>
+          <li><a href="#contact" className='mono' onClick={handleAnchorTags}>Contact me</a></li>
         </ul>
         <button onClick={handleNav}>
           <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" className="bi bi-x-lg" viewBox="0 0 16 16">
@@ -44,7 +52,7 @@ const Header = (props) => {
 
 Header.propTypes = {
   active: PropTypes.bool.isRequired,
-  handleNav: PropTypes.func.isRequired,
+  setActive: PropTypes.func.isRequired,
 };
 
 export default Header;
