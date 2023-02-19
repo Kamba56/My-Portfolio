@@ -23,7 +23,7 @@ const SKills = () => {
 
       <div className='skill-grid content'>
         {skills.map((skill) => (
-          <div className='skill-item'>
+          <div className='skill-item' key={skill.id}>
             <div className='flex'>
               <div className='icon-img'>
                 <img src={skill.img} />

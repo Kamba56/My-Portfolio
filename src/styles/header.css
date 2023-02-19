@@ -17,8 +17,25 @@ nav ul li a {
   display: none;
 }
 
-.mobile-nav {
-  display: block;
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #2c66c390;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  overscroll-behavior: contain;
+  padding: 50px 20px 0;
+}
+
+#mobile-nav ul li {
+  margin: 10px 20px;
+}
+
+#mobile-nav, #mobile-nav ul {
+  align-items: flex-start;
 }
 
 @media only screen and (min-width: 768px) {
@@ -38,7 +55,7 @@ nav ul li a {
     opacity: 1;
   }
 
-  .mobile-nav {
+  #mobile-nav, .hamburger {
     display: none;
   }
 
