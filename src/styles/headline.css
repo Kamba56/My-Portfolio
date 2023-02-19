@@ -25,6 +25,13 @@
   min-height: 70vh;
 }
 
+.about-me {
+  max-width: 600px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  padding: 20px 0;
+}
+
 @media only screen and (min-width: 768px) {
   .green-text {
     font-size: 28px;
@@ -38,5 +45,12 @@
 
   .about {
     padding-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .about-me {
+    font-size: 24px;
+    line-height: 30px;
   }
 }

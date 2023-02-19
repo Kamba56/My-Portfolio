@@ -5,6 +5,7 @@ const Projects = () => {
     { 
       id: 1,
       title: 'GDG event landing page',
+      desc: 'loremkamdoemofmocamem aomowa admo oamoe oamcid  oamfijdcmooamc onmainc oanfciodn oamoind omaodc odun omnad onjud onjiadn iwmai',
       image: 'imc',
       source: 'micmoe',
       live: 'imcd',
@@ -23,9 +24,10 @@ const Projects = () => {
             </div>
             <div className='project-details flex column'>
               <h4 className='center-text'>{project.title}</h4>
+              <p className='center-text'>{project.desc}</p>
               <div className='project-btns flex-space'>
-                <a href={project.source} className="btn mono">Source code</a>
-                <a href={project.live} className="btn btn2 mono">Live demo</a>
+                <a href={project.source} className="btn mono" target='_blank'>Source code</a>
+                <a href={project.live} className="btn btn2 mono" target='_blank'>Live demo</a>
               </div>
             </div>
           </div>

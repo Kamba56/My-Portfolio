@@ -1,5 +1,6 @@
 #social-icons {
   justify-content: space-evenly;
+  width: 100%;
   max-width: 375px;
   height: 100px;
   margin: 0 auto;
