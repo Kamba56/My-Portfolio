@@ -19,6 +19,10 @@
   color: black;
 }
 
+#contact .content {
+  margin-bottom: 0;
+}
+
 textarea.input {
   height: 100px;
 }
