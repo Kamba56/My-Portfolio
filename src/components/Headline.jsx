@@ -3,7 +3,7 @@ import wave from '../assets/wave.png';
 import comp from '../assets/comp.svg';
 
 const Headline = () => (
-  <section className='container'>
+  <section className='container' id='about'>
     <div id='contain' className='flex column-row'>
       <div className='column flex about'>
         <div className='flex'>

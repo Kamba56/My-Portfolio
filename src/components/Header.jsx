@@ -1,5 +1,6 @@
 import '../styles/header.css';
 import PropTypes from 'prop-types';
+import AnchorLink from 'react-anchor-link-smooth-scroll-v2';
 
 const Header = (props) => {
   const { active, handleNav } = props;
@@ -12,10 +13,10 @@ const Header = (props) => {
 
       <nav className='desktop-nav'>
         <ul className="flex">
-          <li><a href="#" className='mono'>About me</a></li>
-          <li><a href="#" className='mono'>Projects</a></li>
-          <li><a href="#" className='mono'>Skills</a></li>
-          <li><a href="#" className='mono'>Contact me</a></li>
+          <li><AnchorLink href="#about" className='mono'>About me</AnchorLink></li>
+          <li><AnchorLink href="#projects" className='mono'>Projects</AnchorLink></li>
+          <li><AnchorLink href="#skills" className='mono'>Skills</AnchorLink></li>
+          <li><AnchorLink href="#contact" className='mono'>Contact me</AnchorLink></li>
         </ul>
       </nav>
       {!active && <button className='hamburger' onClick={handleNav}>
@@ -26,10 +27,10 @@ const Header = (props) => {
 
       {active && <nav id='mobile-nav' className='flex-space'>
         <ul className="flex column">
-          <li><a href="#" className='mono'>About me</a></li>
-          <li><a href="#" className='mono'>Projects</a></li>
-          <li><a href="#" className='mono'>Skills</a></li>
-          <li><a href="#" className='mono'>Contact me</a></li>
+          <li><AnchorLink href="#about" className='mono'>About me</AnchorLink></li>
+          <li><AnchorLink href="#projects" className='mono'>Projects</AnchorLink></li>
+          <li><AnchorLink href="#skills" className='mono'>Skills</AnchorLink></li>
+          <li><AnchorLink href="#contact" className='mono'>Contact me</AnchorLink></li>
         </ul>
         <button onClick={handleNav}>
           <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" className="bi bi-x-lg" viewBox="0 0 16 16">
