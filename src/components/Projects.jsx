@@ -47,15 +47,15 @@ const Projects = () => {
       <div className='project-grid container content'>
         {projects.map((project) => (
           <div className='grid-item flex column' key={project.id}>
-            <div className='project-img'>
+            <div className='project-img scale'>
               <img src={project.image} />
             </div>
             <div className='project-details flex column'>
               <h4 className='center-text'>{project.title}</h4>
               <p className='center-text'>{project.desc}</p>
               <div className='project-btns flex-space'>
-                <a href={project.source} className="btn mono" target='_blank'>Source code</a>
-                <a href={project.live} className="btn btn2 mono" target='_blank'>Live demo</a>
+                <a href={project.source} className="btn mono scale" target='_blank'>Source code</a>
+                <a href={project.live} className="btn btn2 mono scale" target='_blank'>Live demo</a>
               </div>
             </div>
           </div>

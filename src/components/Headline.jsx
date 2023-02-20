@@ -13,12 +13,12 @@ const Headline = () => (
           </div>
           <h4>Hello, I am</h4>
         </div>
-        <h1 className='name'>Toma</h1>
+        <h1 className='name mono'>Toma</h1>
         <p className='green-text'>&lt;&gt; A full stack developer &lt;/&gt;</p>
         <p className='about-me center-text'>Passionate about coding and eager to learn, I am a full-stack developer with 2 years of experience who loves to build great software. Armed with a solid foundation in programming concepts and expertise in responsive design, Javascript, react, ruby, and ruby on rails, I am always striving to write clean, efficient, and maintainable code and am capable of ramping up quickly and efficiently.</p>
 
         <Socials />
-        <a href='./src/assets/resume.pdf' target='_blank' className='center-text btn2 btn'>Get My Resume</a>
+        <a href='./src/assets/resume.pdf' target='_blank' className='center-text btn2 btn scale'>Get My Resume</a>
       </div>
 
       <div>

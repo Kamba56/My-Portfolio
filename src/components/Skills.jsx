@@ -83,7 +83,7 @@ const SKills = () => {
 
       <div className='skill-grid content'>
         {skills.map((skill) => (
-          <div className='skill-item flex' key={skill.id}>
+          <div className='skill-item flex scale' key={skill.id}>
             <div className='flex'>
               <div className='icon-img'>
                 <img src={skill.img} />

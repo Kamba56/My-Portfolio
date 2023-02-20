@@ -21,10 +21,10 @@ const Header = (props) => {
 
       <nav className='desktop-nav'>
         <ul className="flex">
-          <li><AnchorLink href="#about" className='mono' onClick={handleAnchorTags}>About me</AnchorLink></li>
-          <li><AnchorLink href="#projects" className='mono' onClick={handleAnchorTags}>Projects</AnchorLink></li>
-          <li><AnchorLink href="#skills" className='mono' onClick={handleAnchorTags}>Skills</AnchorLink></li>
-          <li><AnchorLink href="#contact" className='mono' onClick={handleAnchorTags}>Contact me</AnchorLink></li>
+          <li><AnchorLink href="#about" className='mono scale' onClick={handleAnchorTags}>About me</AnchorLink></li>
+          <li><AnchorLink href="#projects" className='mono scale' onClick={handleAnchorTags}>Projects</AnchorLink></li>
+          <li><AnchorLink href="#skills" className='mono scale' onClick={handleAnchorTags}>Skills</AnchorLink></li>
+          <li><AnchorLink href="#contact" className='mono scale' onClick={handleAnchorTags}>Contact me</AnchorLink></li>
         </ul>
       </nav>
       {!active && <button className='hamburger' onClick={handleNav}>

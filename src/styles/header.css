@@ -7,6 +7,23 @@ nav ul li a {
   display: block;
   padding: 5px 20px;
   font-size: 16px;
+  position: relative;
+}
+
+nav ul li a::after {
+  position: absolute;
+  bottom: 0;
+  content: '';
+  height: 2px;
+  background: #2c66c3;
+  width: 0;
+  left: 5px;
+  transition: width 1s;
+  z-index: 10;
+}
+
+nav ul li a:hover::after {
+  width: calc(100% - 10px);
 }
 
 .logo {

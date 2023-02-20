@@ -19,7 +19,7 @@ const Contact = () => {
         <div className='container column'>
           <input required type="email" name="email" id="mail" placeholder='Please enter your email' className='input mono' />
           <textarea required name="message" id="message" cols="30" rows="10" placeholder='Type your message here' className='input mono'></textarea>
-          <button type='submit' className='btn'>Send</button>
+          <button type='submit' className='btn scale'>Send</button>
         </div>
       </form>
     </section>

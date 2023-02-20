@@ -102,6 +102,14 @@ a {
   background-color: #2CB67D;
 }
 
+.scale {
+  transition: transform 1s;
+}
+
+.scale:hover {
+  transform: scale(1.5);
+}
+
 @media only screen and (min-width: 768px) {
   .container {
     width: 80%;
