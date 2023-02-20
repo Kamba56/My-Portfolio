@@ -1,6 +1,8 @@
 header {
   background: linear-gradient(#000, #111827 62%);
   padding: 24px;
+  position: sticky;
+  top: 0;
 }
 
 nav ul li a {
