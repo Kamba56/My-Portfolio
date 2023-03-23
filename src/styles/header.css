@@ -3,6 +3,7 @@ header {
   padding: 24px;
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
 
 nav ul li a {
@@ -41,9 +42,10 @@ nav ul li a:hover::after {
   top: 0;
   left: 0;
   width: 100%;
+  max-width: 250px;
   height: 100vh;
   background: #2c66c390;
-  z-index: 100;
+  z-index: 1000;
   backdrop-filter: blur(10px);
   overscroll-behavior: contain;
   padding: 50px 20px 0;
