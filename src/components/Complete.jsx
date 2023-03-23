@@ -10,8 +10,7 @@ const CompleteApp = (props) => {
 
   return (
     <main style={{
-      height: active ? '85vh' : 'auto',
-      overflowY: active ? 'hidden' : 'scroll'
+      height: 'auto'
     }}>
       <Headline />
       <Projects />
