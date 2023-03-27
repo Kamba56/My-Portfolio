@@ -9,12 +9,19 @@ const Typewriter = ({ text }) => {
       const timeoutId = setTimeout(() => {
         setCurrentText(currentText + text[currentIndex]);
         setCurrentIndex(currentIndex + 1);
-      }, 100);
+      }, 300);
       return () => clearTimeout(timeoutId);
     }
+
+    const newtime = setTimeout(() => {
+      setCurrentIndex(0);
+      setCurrentText('');
+    }, 700)
+
+    return () => clearTimeout(newtime);
   }, [currentIndex, currentText, text]);
 
-  return <div>{currentText}</div>;
+  return <span>{currentText}</span>;
 };
 
 export default Typewriter;
