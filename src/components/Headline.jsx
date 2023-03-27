@@ -12,9 +12,9 @@ const Headline = () => (
           <div className='wave'>
             <img src={wave} />
           </div>
-          <h3>Hello dear</h3>
+          <h3>Hello dear I am</h3>
         </div>
-        <h1 className='name mono'>it's <Typewriter text="Toma" /></h1>
+        <h1 className='name mono'><Typewriter text="Toma" /></h1>
         <p className='green-text'>&lt;&gt; A full stack developer &lt;/&gt;</p>
         <p className='about-me center-text'>Passionate about coding and eager to learn, I am a full-stack developer with 2 years of experience who loves to build great software. Armed with a solid foundation in programming concepts and expertise in responsive design, Javascript, React, Ruby, and Ruby on Rails, I am always striving to write clean, efficient, and maintainable code and am capable of ramping up quickly and efficiently.</p>
 
