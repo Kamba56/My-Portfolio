@@ -6,6 +6,8 @@
   font-weight: 400;
   font-size: 40px;
   line-height: 47px;
+  min-height: 47px;
+  margin: 15px;
 }
 
 .green-text {

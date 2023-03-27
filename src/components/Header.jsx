@@ -7,10 +7,12 @@ const Header = (props) => {
   const { active, setActive } = props;
   const handleAnchorTags = () => {
     setActive(false);
+    document.body.classList.remove('hidden');
   }
 
   const handleNav = () => {
     setActive((active) => !active);
+    document.body.classList.toggle('hidden');
   };
 
   return (

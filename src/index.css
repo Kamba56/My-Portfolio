@@ -72,7 +72,7 @@ a {
 
 .title::after {
   content: "";
-  height: 1px;
+  height: 2px;
   width: 30px;
   border-radius: 2px;
   background: #2c66c3;
@@ -108,6 +108,10 @@ a {
 
 .scale:hover {
   transform: scale(1.5);
+}
+
+.hidden {
+  overflow-y: hidden;
 }
 
 @media only screen and (min-width: 768px) {
