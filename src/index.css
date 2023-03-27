@@ -110,6 +110,10 @@ a {
   transform: scale(1.5);
 }
 
+.hidden {
+  overflow-y: hidden;
+}
+
 @media only screen and (min-width: 768px) {
   .container {
     width: 80%;
